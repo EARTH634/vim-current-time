@@ -1,5 +1,5 @@
 function! GetDate()
-	return strftime("%Y/%m/%d %H:%M:%S %A")
+	echo strftime("%Y/%m/%d %H:%M:%S %A")
 endfunction
 
-echo GetDate()
+command! GetCurrent call GetDate()
